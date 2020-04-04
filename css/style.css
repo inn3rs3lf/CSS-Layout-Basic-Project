@@ -1,0 +1,228 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav li {
+	display: block;
+	padding-bottom: 1em;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.top {
+	text-align: center;
+}
+.main-header {
+	width: 80%;
+	margin: auto;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.col {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.secondary {
+	padding-top: 2em;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 1026px) and (max-width: 1980px) {
+	.main-header {
+		width: 80%;
+	}
+
+	.name {
+		float: left;
+		display: block;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		float: left;
+		padding-right: 2em;
+		margin-top: 1em;
+	}
+
+	.primary-content {
+		width: 80%;
+		margin: auto;
+	}
+
+	.col {
+		float: left;
+	}
+
+	.primary {
+		width: 40%;
+		padding-top: 2em;
+	}
+
+	.secondary {
+		width: 30%;
+		padding-top: 2em;
+	}
+
+	.tertiary {
+		width: 30%;
+		padding-top: 2em;
+	}
+
+	.main-footer {
+		clear: both;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 786px) and (max-width: 1024px) {
+	.main-header {
+		width: 80%;
+	}
+
+	.name {
+		float: left;
+		display: block;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		float: left;
+		padding-right: 2em;
+		margin-top: 1em;
+	}
+
+	.primary-content {
+		width: 80%;
+		margin: auto;
+	}
+
+	.col {
+		float: left;
+	}
+
+	.primary {
+		width: 50%;
+		padding-top: 2em;
+	}
+
+	.secondary {
+		width: 50%;
+		padding-top: 2em;
+	}
+
+	.tertiary {
+		width: 100%;
+		padding-top: 2em;
+	}
+
+	.main-footer {
+		clear: both;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
